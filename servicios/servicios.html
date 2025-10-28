@@ -12,7 +12,52 @@
   <link rel="icon" type="image/svg+xml" href="../assets/img/logoconfondo.jpg">
 </head>
 
+<body>
+<header class="site-header">
+  <div class="brand">
+    <a href="../index.html"><img src="../assets/img/Logo.svg" alt="Logo DIW" class="logo" width="150" height="150"></a>
+  </div>
 
+  <nav class="main-nav" aria-label="Menú principal">
+    <ul class="dropdownmenu">
+      <li><a class="menu inicio " href="../index.html">Inicio</a></li>
+
+      <li>
+        <a class="menu productos" href="#">Productos</a>
+        <ul id="submenu">
+          <li><a class="menu comida" href="../productos/comida/comida.html">Comida</a></li>
+          <li><a class="menu bebida" href="../productos/bebida/bebida.html">Bebida</a></li>
+          <li><a class="menu congelados" href="../productos/congelados/congelados.html">Congelados</a></li>
+          <li><a class="menu ofertas" href="../productos/ofertas/ofertas.html">Ofertas</a></li>
+        </ul>
+      </li>
+
+      <li><a class="menu servicios active" href="./servicios.html">Servicios</a></li>
+      <li><a class="menu contacto" href="../contacto/contacto.html">Contacto</a></li>
+    </ul>
+  </nav>
+
+
+  <div class="header-actions">
+    <div class="lang-toggle-container">
+      <input type="checkbox" id="lang-toggle" hidden aria-label="Cambiar idioma">
+      <label for="lang-toggle" class="toggle-label">
+        <span class="toggle-track">
+          <span class="toggle-thumb"></span>
+        </span>
+        <span class="lang-text lang-es">ES</span>
+        <span class="lang-text lang-en">EN</span>
+      </label>
+    </div>
+
+    <a href="#" class="icon user-icon" aria-label="Usuario">👤</a>
+    <a href="#" class="icon cart-icon" aria-label="Carrito">🛒</a>
+  </div>
+</header>
+
+
+
+</body>
 
 
 </html>

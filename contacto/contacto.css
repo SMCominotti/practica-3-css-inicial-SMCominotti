@@ -1,0 +1,187 @@
+.dropdownmenu a.active {
+  background: none; 
+  color: black;
+  font-weight: 500;
+  color:#39C413;
+  }
+
+.site-header {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+  padding: 10px 20px;
+  background-color: #fff; 
+  }
+
+.brand .logo {
+  display: block;
+}
+
+.main-nav {
+  text-align: center;
+}
+
+.dropdownmenu {
+  background: none; 
+  list-style: none;
+  width: auto; 
+  display: flex; 
+  justify-content: center; 
+}
+
+.dropdownmenu li {
+  position: relative;
+  width: auto;
+}
+
+.dropdownmenu a {
+  display: block;
+  font-family: 'Roboto Mono', monospace; 
+  font-weight: 500; 
+  font-size: 16px;
+  padding: 25px 80px; 
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  transition: all .25s ease;
+}
+
+.menu.inicio { border-top: #0077B6 0.3em solid; }
+.menu.productos { border-top: #FF6D00 0.3em solid; }
+.menu.comida { border-top: #F3FF0D 0.3em solid; }
+.menu.bebida { border-top: #39C413 0.3em solid; }
+.menu.congelados { border-top: #FF0707 0.3em solid; }
+.menu.ofertas { border-top: #FF6D00 0.3em solid; }
+.menu.servicios { border-top: #0077B6 0.3em solid; }
+.menu.contacto { border-top: #FF6D00 0.3em solid; }
+
+
+.dropdownmenu li:hover > a {
+  background: #0077B6; 
+  color: #fff;
+}
+
+#submenu {
+  opacity: 0;
+  position: absolute;
+  visibility: hidden;
+  width: 100%;
+  top: 100%; 
+  left: 0;
+}
+
+li:hover ul#submenu {
+  opacity: 1;
+   visibility: visible;
+}
+
+#submenu li {
+  float: none;
+  width: 100%; 
+  list-style-type: none;
+}
+
+#submenu a {
+  background-color: BLACK; 
+  color: #fff;
+  padding: 15px 2px;
+  width: 100%;
+  text-align: center;
+  margin-left: -40px;
+}
+
+#submenu a:hover {
+  background: #FF6D00; 
+}
+
+.header-actions {
+  display: flex;
+  align-items:center;
+  gap: 30px;
+}
+
+.icon {
+  font-size: 24px;
+  text-decoration: none;
+  color: black;
+  transition: color 0.2s;
+  margin: 0 0 0 10px;
+}
+
+.icon:hover {
+  color: #FF6D00; 
+}
+
+.lang-toggle-container {
+  display: flex;
+  align-items: center;
+  position: relative; 
+}
+
+.toggle-label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  padding: 0 10px; 
+}
+
+.toggle-track {
+  width: 50px; 
+  height: 20px; 
+  background: #7A7575; 
+  border-radius: 10px;
+  position: relative;
+  margin: 0 10px;
+  transition: background 0.2s;
+}
+
+.toggle-thumb {
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s, background 0.2s;
+}
+
+.lang-text {
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 300;
+  font-size: 14px;
+  position: absolute;
+  z-index: 1; 
+}
+
+.lang-es {
+  left: -20px; 
+  color: #000;
+  font-weight: 500;
+}
+
+.lang-en {
+  right: -20px; 
+  color: #7A7575; 
+  font-weight: 300;
+}
+
+#lang-toggle:checked + .toggle-label .toggle-track {
+  background: #39C413; 
+}
+
+#lang-toggle:checked + .toggle-label .toggle-thumb {
+  transform: translateX(40px); 
+}
+
+#lang-toggle:checked + .toggle-label .lang-es {
+  color: #7A7575;
+  font-weight: 300;
+}
+
+#lang-toggle:checked + .toggle-label .lang-en {
+  color: #000;
+  font-weight: 500;
+}
