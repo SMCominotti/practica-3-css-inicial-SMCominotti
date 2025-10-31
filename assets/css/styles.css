@@ -73,6 +73,7 @@
   width: 100%;
   top: 100%; 
   left: 0;
+  z-index: 9999;
 }
 
 li:hover ul#submenu {
