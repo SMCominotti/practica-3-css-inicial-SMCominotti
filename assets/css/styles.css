@@ -1,14 +1,15 @@
 
 main {
-  flex: 1;
-  background: 
-    linear-gradient(rgba(255, 255, 255, 0.212), rgba(255, 255, 255, 0.7)),
-    url('../img/supermercado.jpg') center/cover no-repeat;
-    
+  flex: 1;  
  }
 
+ main.inicio {
+    background: 
+    linear-gradient(rgba(255, 255, 255, 0.212), rgba(255, 255, 255, 0.7)),
+    url('../img/supermercado.jpg') center/cover no-repeat;
+ }
 
-/* ------------- ENCABEZADO Y NAV ------------- */
+/*Encabezado y Nav*/  
 
 .dropdownmenu a.active {
   background: none; 
@@ -202,7 +203,7 @@ li:hover ul#submenu {
 
 
 
-/* ------------- FOOTER ------------- */
+/*Footer*/  
 
 .site-footer {
   padding: 20px;
@@ -372,3 +373,62 @@ li:hover ul#submenu {
 .mapa {
   padding: 50px 20px;
 }
+
+/*Servicios*/  
+
+.servicios {
+  padding: 60px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  font-family: 'Roboto Mono', monospace;
+  text-align: center;
+}
+
+.servicios h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #0077B6; 
+}
+
+.servicios table {
+  width: 100%;
+  border-collapse: separate; /* permite separación entre celdas */
+  border-spacing: 0 15px; /* separación vertical entre filas */
+}
+
+.servicios caption {
+  caption-side: top;
+  font-weight: 800;
+  color: #39C413; 
+  font-size: 1.2rem;
+ }
+
+.servicios thead th {
+  background-color: #FF6D00;
+  color: white;
+  padding: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border:#000 1px solid;
+  }
+
+.servicios tbody tr {
+  background: #fafafa;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.servicios tbody td {
+  padding: 15px;
+  border-bottom: 1px solid #eee;
+}
+
+.service-note {
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 400;
+  text-align: center;
+  color: #0961e4;
+  margin-bottom: 50px;
+  font-size: 1.1rem;
+}
+
