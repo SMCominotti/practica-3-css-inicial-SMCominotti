@@ -13,7 +13,8 @@ main {
     background: 
     linear-gradient(rgba(255, 255, 255, 0.212), rgba(255, 255, 255, 0.7)),
     url('../img/supermercado.jpg') center/cover no-repeat;
- }
+    }
+
 
 /*Encabezado y Nav*/  
 
@@ -301,7 +302,7 @@ li:hover ul#submenu {
 .inicio {
   text-align: center;
   font-family: 'Roboto Mono', monospace;
-}
+  }
 
 .hero {
   color: #fff;
@@ -697,3 +698,6 @@ form input[type="reset"] {
   grid-column: 1 / -1; /* si el main usa grid */
 }
 
+.bajarBoton {
+  margin-bottom: 40px;
+}
