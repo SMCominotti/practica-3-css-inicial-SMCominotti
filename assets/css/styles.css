@@ -305,7 +305,7 @@ li:hover ul#submenu {
 
 .hero {
   color: #fff;
-  padding: 100px 20px;
+  padding: 40px 20px;
 }
 
 .hero-content {
@@ -345,7 +345,7 @@ li:hover ul#submenu {
 }
 
 .categorias h2 {
-  margin-bottom: 30px;
+  margin-bottom: 60px;
   font-size: 1.8rem;
 }
 
@@ -374,9 +374,7 @@ li:hover ul#submenu {
   object-fit: cover;
 }
 
-.mapa {
-  padding: 50px 20px;
-}
+
 
 /*Servicios*/  
 
