@@ -428,7 +428,124 @@ li:hover ul#submenu {
   font-weight: 400;
   text-align: center;
   color: #0961e4;
-  margin-bottom: 50px;
   font-size: 1.1rem;
+  align-content: center;
 }
 
+/*Contacto*/  
+.contacto {
+  padding: 60px 10%;
+  
+}
+
+.contacto h2 {
+  font-size: 2rem;
+  color: #39C413;
+  margin-bottom: 30px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* Formulario */
+form {
+  max-width: 600px;
+  margin: 0 auto 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form label {
+  font-weight: 500;
+  color: #333;
+  text-align: left;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="number"],
+form input[type="tel"],
+form textarea {
+  width: 100%;
+  padding: 10px;
+  font-family: 'Roboto Mono', monospace;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fff;
+  transition: border-color 0.3s;
+}
+
+form input:focus,
+form textarea:focus {
+  border-color: #39C413;
+  outline: none;
+}
+
+form textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+/* Checkbox */
+form input[type="checkbox"] {
+  margin-right: 8px;
+}
+
+/* Botón */
+form input[type="submit"] {
+  background-color: #39C413;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+form input[type="submit"]:hover {
+  background-color: #2da00f;
+}
+form input[type="reset"] {
+  background-color: #f3390a;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contenedor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 70px;
+  padding-bottom: 40px; 
+}
+
+.boton-volver {
+  display: inline-block;
+  padding: 10px 25px;
+  background-color: #0056ff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+.boton-volver:hover {
+  background-color: #ff7300;
+}
+
+/* En pantallas pequeñas: que el botón quede en flujo normal debajo de la imagen */
+@media (max-width: 900px) {
+  .contenedor {
+    margin-top: 40px;
+  }
+
+}
