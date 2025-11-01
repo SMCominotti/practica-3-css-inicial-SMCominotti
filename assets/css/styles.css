@@ -1,3 +1,6 @@
+body {
+  margin: 0;
+}
 
 main {
   flex: 1;  
@@ -200,7 +203,6 @@ li:hover ul#submenu {
   color: #000;
   font-weight: 500;
 }
-
 
 
 /*Footer*/  
@@ -427,7 +429,7 @@ li:hover ul#submenu {
   font-family: 'Roboto Mono', monospace;
   font-weight: 400;
   text-align: center;
-  color: #0961e4;
+  color: #FF6D00;
   font-size: 1.1rem;
   align-content: center;
 }
@@ -435,8 +437,7 @@ li:hover ul#submenu {
 /*Contacto*/  
 .contacto {
   padding: 60px 10%;
-  
-}
+  }
 
 .contacto h2 {
   font-size: 2rem;
@@ -486,12 +487,10 @@ form textarea {
   min-height: 100px;
 }
 
-/* Checkbox */
 form input[type="checkbox"] {
   margin-right: 8px;
 }
 
-/* Botón */
 form input[type="submit"] {
   background-color: #39C413;
   color: #fff;
@@ -547,5 +546,4 @@ form input[type="reset"] {
   .contenedor {
     margin-top: 40px;
   }
-
 }
