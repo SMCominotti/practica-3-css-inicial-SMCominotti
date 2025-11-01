@@ -8,8 +8,9 @@ body {
   font-family: 'Roboto Mono', monospace;
   background-color: #fff;
   height: 100vh;
-  text-align: center; 
-  overflow: hidden;
+  text-align: center;
+  /* permitir scroll si hace falta */
+  overflow-y: auto;
 }
 
 .contenedor {
@@ -18,18 +19,14 @@ body {
   align-items: center;
   justify-content: start;
   margin-top: 100px;
-  }
+  padding-bottom: 40px; 
+}
 
 .imagen-construccion {
   width: 650px;
   max-width: 80%;
-  }
-
-.boton-fijo {
-position: fixed;
-bottom: 200px;
-left: 50%;
-transform: translateX(-50%); 
+  max-height: calc(100vh - 260px); 
+  object-fit: contain;
 }
 
 .boton-volver {
@@ -46,4 +43,32 @@ transform: translateX(-50%);
 
 .boton-volver:hover {
   background-color: #ff7300;
+}
+
+.boton-fijo {
+  position: fixed;
+  bottom: 8vh;          
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 20;
+}
+
+/* En pantallas pequeñas: que el botón quede en flujo normal debajo de la imagen */
+@media (max-width: 900px) {
+  .contenedor {
+    margin-top: 40px;
+  }
+
+  .imagen-construccion {
+    width: 90%;
+    max-height: calc(100vh - 180px);
+  }
+
+  .boton-fijo {
+    position: relative; 
+    bottom: auto;
+    left: auto;
+    transform: none;
+    margin-top: 20px;
+  }
 }
