@@ -601,8 +601,16 @@ form input[type="reset"] {
 
 .products-row {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 1.5rem;
+  max-width: 1200px; 
+  margin: 0 auto; 
+}
+
+@media (min-width: 1024px) {
+  .products-row {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 .product-card {
