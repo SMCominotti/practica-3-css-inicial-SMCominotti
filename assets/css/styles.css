@@ -606,6 +606,18 @@ form input[type="reset"] {
   max-width: 1200px; 
   margin: 0 auto; 
 }
+.card-actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.card-actions a {
+  flex: 1;
+  text-align: center;
+  display: inline-block;
+}
+
 
 @media (min-width: 1024px) {
   .products-row {
@@ -646,8 +658,25 @@ form input[type="reset"] {
 .card-actions {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 0.5em;
   margin-top: 0.6em;
+}
+
+.card-actions a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-actions .btn-acept {
+  flex: 1;
+  text-align: center;
+}
+
+.card-actions .btn-outline {
+  flex: 0;
+  white-space: nowrap;
 }
 
 .rating {
@@ -678,6 +707,7 @@ form input[type="reset"] {
   background: #39C413;
   color: #fff;
 }
+
 .btn-acept:hover {
   background: rgba(29, 110, 7, 0.85);
 }
@@ -686,7 +716,9 @@ form input[type="reset"] {
   background: transparent;
   border: 2px solid  #0056ff;
   color: #333;
-}
+  align-content: center;
+  }
+  
 .btn-outline:hover {
   border-color:#ff7300;
   background-color: #ff7300;
