@@ -701,3 +701,14 @@ form input[type="reset"] {
 .bajarBoton {
   margin-bottom: 40px;
 }
+
+.main.sin-aside {
+  display: block;
+  padding: 2rem;
+}
+
+.main.sin-aside .products-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
